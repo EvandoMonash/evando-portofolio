@@ -1,5 +1,5 @@
 export const site = {
     name: 'Evando',
-    profileImage: '/public/images/profile.jpg', // Changed to lowercase
+    profileImage: '/images/profile.jpg', // Changed to lowercase
 };
 
