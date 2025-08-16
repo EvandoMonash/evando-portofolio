@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { site } from '@/lib/site';
@@ -34,13 +33,10 @@ export default function Hero() {
                 <Reveal as="div" className="relative mx-auto h-56 w-56 md:h-72 md:w-72" delayMs={120}>
                     <div className="absolute -inset-2 -z-10 rounded-full bg-gradient-to-tr from-brand-600/30 to-indigo-400/30 blur-2xl" />
                     <div className="relative h-full w-full overflow-hidden rounded-full border border-neutral-200 bg-neutral-100 p-2 shadow-xl dark:border-white/10 dark:bg-neutral-900/40">
-                        <Image
+                        <img
                             src={site.profileImage}
                             alt={`${site.name} profile photo`}
-                            fill
-                            sizes="(min-width: 768px) 18rem, 14rem"
-                            className="object-cover object-[42%_76%] scale-125"
-                            priority
+                            className="h-full w-full object-cover object-[42%_76%] scale-125"
                         />
                     </div>
                 </Reveal>
